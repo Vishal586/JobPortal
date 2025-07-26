@@ -37,3 +37,7 @@ app.listen(PORT, async () => {
     await connectDB();
     console.log(`✅ Server running at http://localhost:${PORT}`);
 });
+
+app.get("/", (req, res) => {
+  res.send("Backend API is running...");
+});
