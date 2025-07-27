@@ -22,7 +22,10 @@ app.use(cookieParser());
 
 // CORS config for frontend (Vite default port 5173)
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: [
+        "http://localhost:5173", // for local development
+        "https://job-portal-sppw.vercel.app" // for deployed frontend
+    ],
     credentials: true
 }));
 
