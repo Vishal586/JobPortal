@@ -22,8 +22,8 @@ app.use(cookieParser());
 
 // CORS config for frontend (Vite default port 5173)
 const allowedOrigins = [
-  'https://job-portal123245.netlify.app',
-  'http://localhost:5173'
+  'http://localhost:5173',
+  ''
 ];
 
 app.use(cors({
