@@ -23,7 +23,7 @@ app.use(cookieParser());
 // CORS config for frontend (Vite default port 5173)
 app.use(cors({
     origin: [
-        "http://localhost:5173", // for local development // for deployed frontend
+        "https://job-portal123245.netlify.app/", // for local development // for deployed frontend
     ],
     credentials: true
 }));
