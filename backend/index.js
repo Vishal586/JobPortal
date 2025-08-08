@@ -21,13 +21,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // CORS config for frontend (Vite default port 5173)
-const allowedOrigins = [
-  'http://localhost:5173',
-  ''
-];
 
 app.use(cors({
-  origin: allowedOrigins,
+  origin: "https://jobportal-2-hhii.onrender.com",
   credentials: true
 }));
 
@@ -47,3 +43,4 @@ app.listen(PORT, async () => {
 app.get("/", (req, res) => {
   res.send("Backend API is running...");
 });
+
